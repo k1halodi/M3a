@@ -6,18 +6,17 @@
   "scripts": {
     "build": "evershop build --skip-minify",
     "start": "evershop start",
-    "dev": "evershop dev",
     "user:create": "evershop user:create",
     "user:changePassword": "evershop user:changePassword"
   },
   "workspaces": [
-    "packages/*",
-    "extensions/*"
+    "packages/*"
   ],
   "author": "EverShop",
   "license": "ISC",
   "dependencies": {
     "@evershop/azure_file_storage": "^1.2.0",
+    "@types/react": "^18.0.0",
     "@evershop/evershop": "^1.0.0-rc.8",
     "@evershop/product_review": "^1.1.0",
     "@evershop/sendgrid": "^1.0.1"
