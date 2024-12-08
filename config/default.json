@@ -1,0 +1,106 @@
+{
+    "shop": {
+        "currency": "EGP",
+        "language": "en",
+        "weightUnit": "kg"
+    },
+    "themeConfig": {
+        "logo": {
+            "alt": "M3aaStore",
+            "src": "/Logo.png",
+            "width": 35,
+            "height": 35
+        },
+        "colors": {
+            "primary": "#ff5a5f",
+            "secondary": "#ff5a5f",
+            "background": "#F1F1F1"
+        },
+        "headTags": {
+            "links": [
+                {
+                    "rel": "icon",
+                    "href": "Logo.png"
+                },
+                {
+                    "rel": "stylesheet",
+                    "href": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+                }
+            ],
+            "metas": [],
+            "scripts": []
+        },
+        "copyRight": "© 2024 M3aaStore. All Rights Reserved."
+    },
+    "pricing": {
+        "tax": {
+            "rounding": "round",
+            "precision": 2,
+            "round_level": "unit",
+            "price_including_tax": true,
+            "rate": 0.14
+        }
+    },
+    "catalog": {
+        "product": {
+            "image": {
+                "thumbnail": {
+                    "width": 100,
+                    "height": 100
+                },
+                "listing": {
+                    "width": 300,
+                    "height": 300
+                },
+                "single": {
+                    "width": 500,
+                    "height": 500
+                }
+            }
+        },
+        "showOutOfStockProduct": false
+    },
+    "system": {
+        "theme": "eve",
+        "file_storage": "azure",
+        "extensions": [
+            {
+                "name": "sendGrid",
+                "resolve": "node_modules/@evershop/sendgrid",
+                "enabled": true,
+                "priority": 10
+            },
+            {
+                "name": "product_review",
+                "resolve": "node_modules/@evershop/product_review",
+                "enabled": true,
+                "priority": 10
+            },
+            {
+                "name": "azure_file_storage",
+                "resolve": "node_modules/@evershop/azure_file_storage",
+                "enabled": true,
+                "priority": 10
+            }
+        ]
+    },
+    "sendgrid": {
+        "from": "Customer Service",
+        "fromName": "M3aaStore",
+        "events": {
+            "order_placed": {
+                "enabled": true,
+                "templateId": "d-d68d9d1bb3a6496d8084442d03088719"
+            }, 
+            "reset_password": {
+                "enabled": true,
+                "templateId": "d-0f55f4a200b54b05808292b4a1dde36c"
+              },
+              "customer_registered": {
+                "enabled": true,
+                "templateId": "d-f6f1f632f082447a90c98e85a3f05392"
+              }
+            }
+          }
+        }
+            
