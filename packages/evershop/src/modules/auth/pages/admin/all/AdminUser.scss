@@ -1,0 +1,20 @@
+.admin-user {
+  .first-letter {
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: #ff5a5f;
+    font-weight: 600;
+    border: 3px solid #ff5a5f;
+  }
+  .logout {
+    position: absolute;
+    right: 0;
+    top: 115%;
+    width: 230px;
+    background-color: white;
+  }
+}
