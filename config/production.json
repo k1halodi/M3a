@@ -1,0 +1,19 @@
+{
+    "system": {
+        "theme": "eve",
+        "extensions": [
+            {
+                "name": "sendGrid",
+                "resolve": "node_modules/@evershop/sendgrid",
+                "enabled": true,
+                "priority": 10
+            },
+            {
+                "name": "product_review",
+                "resolve": "node_modules/@evershop/product_review",
+                "enabled": true,
+                "priority": 10
+            }
+        ]
+    }
+}

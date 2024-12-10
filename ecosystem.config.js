@@ -9,4 +9,4 @@ module.exports = {
         args: "run start",
       },
     ],
-  };س
+  };
