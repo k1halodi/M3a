@@ -62,7 +62,6 @@
     },
     "system": {
         "theme": "eve",
-        "file_storage": "azure",
         "extensions": [
             {
                 "name": "sendGrid",
@@ -73,12 +72,6 @@
             {
                 "name": "product_review",
                 "resolve": "node_modules/@evershop/product_review",
-                "enabled": true,
-                "priority": 10
-            },
-            {
-                "name": "azure_file_storage",
-                "resolve": "node_modules/@evershop/azure_file_storage",
                 "enabled": true,
                 "priority": 10
             }

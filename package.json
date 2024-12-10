@@ -10,12 +10,11 @@
     "user:changePassword": "evershop user:changePassword"
   },
   "workspaces": [
-    "packages/*"
+    "extensions/*"
   ],
   "author": "EverShop",
   "license": "ISC",
   "dependencies": {
-    "@evershop/azure_file_storage": "^1.2.0",
     "@evershop/evershop": "^1.0.0-rc.8",
     "@evershop/product_review": "^1.1.0",
     "@evershop/sendgrid": "^1.0.1"
