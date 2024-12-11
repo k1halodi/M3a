@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "setup": "evershop install",
     "build": "evershop build --skip-minify",
     "start": "evershop start",
     "user:create": "evershop user:create",
