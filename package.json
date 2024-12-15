@@ -5,18 +5,29 @@
   "scripts": {
     "build": "evershop build --skip-minify",
     "start": "evershop start",
+    "dev": "evershop dev",
     "user:create": "evershop user:create",
     "user:changePassword": "evershop user:changePassword"
   },
   "workspaces": [
+    "packages/*",
     "extensions/*"
   ],
   "author": "EverShop",
   "license": "ISC",
   "dependencies": {
-    "@evershop/evershop": "^1.0.0-rc.8",
+    "@evershop/azure_file_storage": "^1.2.0",
+    "@evershop/evershop": "^1.2.1",
     "@evershop/product_review": "^1.1.0",
-    "@evershop/sendgrid": "^1.0.1"
+    "@evershop/resend": "^1.1.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k1halodi/M3a.git"
+  },
+  "bugs": {
+    "url": "https://github.com/k1halodi/M3a/issues"
+  },
+  "homepage": "https://github.com/k1halodi/M3a#readme",
   "description": ""
 }
