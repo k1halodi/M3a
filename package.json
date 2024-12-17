@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-   "dev": "evershop dev",
+    "dev": "evershop dev",
     "setup": "evershop install",
     "build": "evershop build",
     "start": "evershop start",
