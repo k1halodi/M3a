@@ -4,20 +4,30 @@ import PropTypes from "prop-types";
 import React from "react";
 
 export default function FeaturedProducts({ collection }) {
-  if (!collection) {
-    return null;
-  }
-  return (
-    <div className="pt-3">
-      <div className="page-width">
-        <h2 className="mt-3 mb-3 text-center uppercase  tracking-widest">
-          {collection.name}
-        </h2>
-        <ProductList products={collection.products.items} countPerRow={3} />
+    if (!collection) {
+      return null;
+    }
+    return (
+      <div className="pt-3">
+        <div className="page-width">
+          <div
+            style={{
+              fontFamily: "'Poppins', sans-serif",
+              textAlign: "center",
+              fontSize: "2.5rem",
+              fontWeight: "bold",
+              color: "#333",
+              margin: "0",
+            }}
+          >
+            {collection.name}
+          </div>
+          <ProductList products={collection.products.items} countPerRow={3} />
+        </div>
       </div>
-    </div>
-  );
-}
+    );
+  }
+  
 
 FeaturedProducts.propTypes = {
   collection: PropTypes.shape({
