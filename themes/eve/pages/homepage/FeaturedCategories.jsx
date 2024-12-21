@@ -18,7 +18,7 @@ export default function FeaturedProducts({ collection }) {
               fontWeight: "bold",
               color: "#333",
               margin: "0",
-              paddingBottom: "20px",  // Added padding after the collection name
+              paddingBottom: "30px",  // Added padding after the collection name
             }}
           >
             {collection.name}
